@@ -1,94 +1,73 @@
-# 10x Astro Starter
+# 10x-cards
 
-A modern, opinionated starter template for building fast, accessible, and AI-friendly web applications.
+## Table of Contents
+
+- [Project Description](#project-description)
+- [Tech Stack](#tech-stack)
+- [Getting Started Locally](#getting-started-locally)
+- [Available Scripts](#available-scripts)
+- [Project Scope](#project-scope)
+- [Project Status](#project-status)
+- [License](#license)
+
+## Project Description
+
+10x-cards is a user-friendly flashcards application that enables users to quickly create, manage, and study flashcards. Leveraging AI-powered suggestions via an LLM API, it reduces the time and effort required to create effective flashcards for spaced repetition learning. The app supports both automatic flashcard generation and manual flashcard management (creation, editing, and deletion), complete with user authentication and account management.
 
 ## Tech Stack
 
-- [Astro](https://astro.build/) v5.5.5 - Modern web framework for building fast, content-focused websites
-- [React](https://react.dev/) v19.0.0 - UI library for building interactive components
-- [TypeScript](https://www.typescriptlang.org/) v5 - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) v4.0.17 - Utility-first CSS framework
+- **Frontend:** Astro 5, React 19, TypeScript 5, Tailwind 4, Shadcn/ui
+- **Backend:** Supabase for database management and user authentication
+- **AI Integration:** Openrouter.ai for accessing various LLM models to generate flashcard suggestions
+- **CI/CD & Hosting:** GitHub Actions and DigitalOcean (using Docker)
 
-## Prerequisites
+## Getting Started Locally
 
-- Node.js v22.14.0 (as specified in `.nvmrc`)
-- npm (comes with Node.js)
+1. **Prerequisites:**
 
-## Getting Started
+   - [Node.js](https://nodejs.org/) (version specified in the `.nvmrc` file: 22.14.0)
 
-1. Clone the repository:
+2. **Clone the repository:**
 
-```bash
-git clone https://github.com/przeprogramowani/10x-astro-starter.git
-cd 10x-astro-starter
-```
+   ```sh
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-2. Install dependencies:
+3. **Install dependencies:**
 
-```bash
-npm install
-```
+   ```sh
+   npm install
+   ```
 
-3. Run the development server:
-
-```bash
-npm run dev
-```
-
-4. Build for production:
-
-```bash
-npm run build
-```
+4. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
 
 ## Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
-- `npm run lint:fix` - Fix ESLint issues
+- `npm run dev` - Runs the development server.
+- `npm run build` - Builds the project for production.
+- `npm run preview` - Serves the production build locally.
+- `npm run astro` - Executes Astro CLI commands.
+- `npm run lint` - Runs ESLint to analyze code quality.
+- `npm run lint:fix` - Automatically fixes linting errors.
+- `npm run format` - Formats code using Prettier.
 
-## Project Structure
+## Project Scope
 
-```md
-.
-├── src/
-│   ├── layouts/    # Astro layouts
-│   ├── pages/      # Astro pages
-│   │   └── api/    # API endpoints
-│   ├── components/ # UI components (Astro & React)
-│   └── assets/     # Static assets
-├── public/         # Public assets
-```
+- **Automatic Flashcard Generation:** Use AI to generate flashcards from user-provided text.
+- **Manual Flashcard Management:** Create, edit, and delete flashcards manually.
+- **User Authentication:** Secure registration and login functionality.
+- **Spaced Repetition Integration:** Incorporates algorithms to optimize learning sessions.
+- **Data Tracking & Privacy:** Tracks flashcard generation metrics while ensuring GDPR-compliant data handling.
 
-## AI Development Support
+## Project Status
 
-This project is configured with AI development tools to enhance the development experience, providing guidelines for:
-
-- Project structure
-- Coding practices
-- Frontend development
-- Styling with Tailwind
-- Accessibility best practices
-- Astro and React guidelines
-
-### Cursor IDE
-
-The project includes AI rules in `.cursor/rules/` directory that help Cursor IDE understand the project structure and provide better code suggestions.
-
-### GitHub Copilot
-
-AI instructions for GitHub Copilot are available in `.github/copilot-instructions.md`
-
-### Windsurf
-
-The `.windsurfrules` file contains AI configuration for Windsurf.
-
-## Contributing
-
-Please follow the AI guidelines and coding practices defined in the AI configuration files when contributing to this project.
+- **Version:** 0.0.1 (MVP)
+- Currently in early development with ongoing enhancements and optimizations planned.
 
 ## License
 
-MIT
+MIT License
